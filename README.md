@@ -48,4 +48,4 @@ The reflections below draw on themes of self-sabotage, behavior patterns and sel
 
 ---
 
-<sub>From solving technical problems to designing my own future.</sub>
+<sub>I solve business problems with technology. · From solving technical problems to designing my own future.</sub>

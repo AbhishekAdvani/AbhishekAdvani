@@ -80,7 +80,7 @@ render(
     1200,
     360,
     "Abhishek Advani — engineering profile",
-    "Built, not born. An engineer's journey from solving technical problems to designing his own future.",
+    "I solve business problems with technology. SAP and MERN engineering from architecture through delivery.",
     '''
   <circle cx="1060" cy="35" r="190" fill="#EDF4EF"/>
   <circle cx="1090" cy="320" r="140" fill="#EAF1F8"/>
@@ -91,13 +91,14 @@ render(
       {PORTRAIT_MARKUP}
     </svg>
   </g>
-  <rect x="54" y="48" width="4" height="260" rx="2" fill="url(#brand)"/>
+  <rect x="54" y="48" width="4" height="272" rx="2" fill="url(#brand)"/>
   <g class="enter">
     <text x="82" y="76" class="eyebrow">ENGINEERING  /  ARCHITECTURE  /  DELIVERY</text>
     <text x="78" y="156" class="serif" fill="#163D2A" font-size="66" font-weight="700">Abhishek Advani</text>
     <text x="82" y="202" fill="#0B4885" font-size="22" font-weight="600">SAP BTP · Full-Stack Engineering · Technical Leadership</text>
-    <text x="82" y="248" fill="#163D2A" font-size="18" font-weight="600">Built, not born. Designing the next version through focus, consistency and judgment.</text>
-    <text x="82" y="291" fill="#667384" font-size="15">SAP RAP  /  OData  /  CAP  /  React  /  Node.js  /  Cloud Foundry</text>
+    <text x="82" y="248" fill="#163D2A" font-size="20" font-weight="700">I solve business problems with technology.</text>
+    <text x="82" y="276" fill="#667384" font-size="15">Built, not born. Designing the next version through focus, consistency and judgment.</text>
+    <text x="82" y="313" fill="#667384" font-size="15">SAP RAP  /  OData  /  CAP  /  React  /  Node.js  /  Cloud Foundry</text>
   </g>
 '''.replace("    {PORTRAIT_MARKUP}", "    " + PORTRAIT_MARKUP),
 )
