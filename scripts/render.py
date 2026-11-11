@@ -6,6 +6,7 @@ Set STATIC=1 to emit a still version without animation.
 from html import escape
 import os
 from pathlib import Path
+import re
 
 
 CARDS = Path(__file__).resolve().parents[1] / "cards"
@@ -14,6 +15,11 @@ STATIC = os.getenv("STATIC") == "1"
 PORTRAIT_SOURCE = CARDS / "dotted_portrait (1).svg"
 portrait_svg = PORTRAIT_SOURCE.read_text()
 PORTRAIT_MARKUP = portrait_svg[portrait_svg.find(">") + 1 : portrait_svg.rfind("</svg>")]
+PORTRAIT_MARKUP = re.sub(
+    r'(<circle\b[^>]*\br=")([0-9.]+)(")',
+    lambda match: f"{match.group(1)}{float(match.group(2)) * 3}{match.group(3)}",
+    PORTRAIT_MARKUP,
+)
 
 COLORS = {
     "blue": "#0B4885",
@@ -80,9 +86,11 @@ render(
   <circle cx="1090" cy="320" r="140" fill="#EAF1F8"/>
   <defs><clipPath id="portraitClip"><circle cx="1004" cy="180" r="166"/></clipPath></defs>
   <circle cx="1004" cy="180" r="171" fill="#FFFFFF" stroke="#DCE7E0" stroke-width="2"/>
-  <svg x="838" y="14" width="332" height="332" viewBox="0 0 1200 1200" preserveAspectRatio="xMidYMid meet" clip-path="url(#portraitClip)">
-    {PORTRAIT_MARKUP}
-  </svg>
+  <g clip-path="url(#portraitClip)">
+    <svg x="838" y="14" width="332" height="332" viewBox="0 0 1200 1200" preserveAspectRatio="xMidYMid meet">
+      {PORTRAIT_MARKUP}
+    </svg>
+  </g>
   <rect x="54" y="48" width="4" height="260" rx="2" fill="url(#brand)"/>
   <g class="enter">
     <text x="82" y="76" class="eyebrow">ENGINEERING  /  ARCHITECTURE  /  DELIVERY</text>
@@ -91,7 +99,7 @@ render(
     <text x="82" y="248" fill="#163D2A" font-size="18" font-weight="600">Built, not born. Designing the next version through focus, consistency and judgment.</text>
     <text x="82" y="291" fill="#667384" font-size="15">SAP RAP  /  OData  /  CAP  /  React  /  Node.js  /  Cloud Foundry</text>
   </g>
-  </g>'''.replace("    {PORTRAIT_MARKUP}", "    " + PORTRAIT_MARKUP),
+'''.replace("    {PORTRAIT_MARKUP}", "    " + PORTRAIT_MARKUP),
 )
 
 
