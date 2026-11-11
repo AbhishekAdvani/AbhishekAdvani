@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="315" viewBox="0 0 1200 315" role="img" aria-labelledby="architecture-title architecture-description">
+  <title id="architecture-title">SAP and MERN stack architecture</title>
+  <desc id="architecture-description">Two distinct architecture paths: SAP S/4HANA, ABAP RAP and CDS, OData and CAP, Fiori and SAPUI5, SAP BTP and Cloud Foundry; and MongoDB, Express, React, Node.js and cloud deployment.</desc>
+  <defs>
+    <linearGradient id="canvas" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F8FC"/></linearGradient>
+    <linearGradient id="brand" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#163D2A"/><stop offset="1" stop-color="#0B4885"/></linearGradient>
+  </defs>
+  <style>
+  text{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+  .serif{font-family:'Playfair Display',Georgia,'Times New Roman',serif}
+  .mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+  .eyebrow{fill:#0B4885;font-size:13px;font-weight:700;letter-spacing:2.2px}
+  .muted{fill:#667384}
+  @keyframes enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes drift{50%{transform:translateY(-5px)}}
+  @keyframes dash{to{stroke-dashoffset:-48}}
+  .enter{animation:enter .75s ease-out both}
+  .drift{animation:drift 5s ease-in-out infinite}
+  .dash{animation:dash 6s linear infinite}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+  <rect width="1200" height="315" rx="24" fill="url(#canvas)"/>
+  <rect x="1" y="1" width="1198" height="313" rx="23" fill="none" stroke="#E4EAF0"/>
+  
+  <text x="38" y="47" class="eyebrow">SYSTEMS I BUILD</text>
+  <text x="38" y="83" class="serif" fill="#163D2A" font-size="29" font-weight="700">SAP &amp; MERN stack architecture</text>
+  <text x="40" y="119" fill="#163D2A" font-size="12" font-weight="800" letter-spacing="1.5">SAP STACK</text>
+  <text x="40" y="222" fill="#0B4885" font-size="12" font-weight="800" letter-spacing="1.5">MERN STACK</text>
+  <g text-anchor="middle" fill="#202A35" font-size="13" font-weight="600">
+    <rect x="40" y="132" width="180" height="54" rx="13" fill="#FFFFFF" stroke="#C9D9CC"/><text x="130" y="165">SAP S/4HANA</text>
+    <rect x="275" y="132" width="180" height="54" rx="13" fill="#FFFFFF" stroke="#C9D9CC"/><text x="365" y="165">ABAP RAP / CDS</text>
+    <rect x="510" y="132" width="180" height="54" rx="13" fill="#FFFFFF" stroke="#C9D9CC"/><text x="600" y="165">OData / CAP</text>
+    <rect x="745" y="132" width="180" height="54" rx="13" fill="#FFFFFF" stroke="#C9D9CC"/><text x="835" y="165">Fiori / SAPUI5</text>
+    <rect x="980" y="132" width="180" height="54" rx="13" fill="#FFFFFF" stroke="#C9D9CC"/><text x="1070" y="165">SAP BTP / Cloud Foundry</text>
+    <rect x="40" y="235" width="180" height="54" rx="13" fill="#FFFFFF" stroke="#C7D7E8"/><text x="130" y="268">MongoDB</text>
+    <rect x="275" y="235" width="180" height="54" rx="13" fill="#FFFFFF" stroke="#C7D7E8"/><text x="365" y="268">Express.js</text>
+    <rect x="510" y="235" width="180" height="54" rx="13" fill="#FFFFFF" stroke="#C7D7E8"/><text x="600" y="268">React</text>
+    <rect x="745" y="235" width="180" height="54" rx="13" fill="#FFFFFF" stroke="#C7D7E8"/><text x="835" y="268">Node.js</text>
+    <rect x="980" y="235" width="180" height="54" rx="13" fill="#FFFFFF" stroke="#C7D7E8"/><text x="1070" y="268">Cloud Deployment</text>
+  </g>
+  <path d="M220 159H275 M455 159H510 M690 159H745 M925 159H980" stroke="#8EA97B" stroke-width="3" stroke-dasharray="6 6" class="dash"/>
+  <path d="M220 262H275 M455 262H510 M690 262H745 M925 262H980" stroke="#0B4885" stroke-width="3" stroke-dasharray="6 6" class="dash"/>
+</svg>
