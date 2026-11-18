@@ -30,7 +30,7 @@
 
 ### Built, not born
 
-At <!-- AGE -->25<!-- /AGE -->, I’m growing from a hands-on builder into a technical leader who owns architecture and outcomes, with the long-term ambition to create products of my own. I’m shaping that path through focus, consistency and judgment—and making room for health, freedom and a meaningful life along the way.
+At <!-- AGE -->26<!-- /AGE -->, I’m growing from a hands-on builder into a technical leader who owns architecture and outcomes, with the long-term ambition to create products of my own. I’m shaping that path through focus, consistency and judgment—and making room for health, freedom and a meaningful life along the way.
 
 The reflections below draw on themes of self-sabotage, behavior patterns and self-mastery in [*The Mountain Is You* by Brianna Wiest](https://books.apple.com/us/book/the-mountain-is-you/id1514136931). The wording and how I apply those ideas to my own growth are mine.
 
